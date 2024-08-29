@@ -1,75 +1,100 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Trivia VS AI - Client Side
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Current Development Status](#current-development-status)
+- [Description](#description)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Development Progress](#development-progress)
+- [Future Enhancements](#future-enhancements)
+- [Setup Instructions](#setup-instructions)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [License](#license)
 
-## Available Scripts
+## Current Development Status
 
-In the project directory, you can run:
+**Note**: This application is currently in the development stages, with several functionalities fully operational, including user authentication, route management, and theming. Continuous improvements are being made to enhance the user experience and extend the application's features.
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Trivia VS AI* is a cutting-edge trivia game application built with a modern and dynamic user interface. The client side of this application is developed using React, featuring responsive design elements and interactive components to provide an engaging gameplay experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Secure login and sign-up functionality with JWT-based authentication.
+- **Dynamic Theming**: Neon-inspired themes with support for dark mode, implemented using Material-UI.
+- **Reusable Components**: Custom styled components for consistent UI across the application.
+- **Protected Routes**: Ensuring that only authenticated users can access certain parts of the application.
+- **Responsive Design**: Built with responsiveness in mind to ensure a seamless experience across devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology Stack
 
-### `npm run build`
+- **Frontend**: React, Material-UI (MUI)
+- **State Management**: React Context API
+- **Routing**: React Router
+- **Styling**: CSS-in-JS (Emotion)
+- **HTTP Client**: Axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Development Progress
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The client-side application is currently in active development. The following key features have been implemented:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **User authentication and profile management**: Secure user login, registration, and profile management functionalities.
+- **Dynamic UI components with consistent theming**: Utilization of custom Material UI themes and reusable styled components for a cohesive look and feel.
+- **Secure routing and navigation**: Protected routes and navigation management for both authenticated and non-authenticated users.
+- **Integration with server-side AI models**: Real-time gameplay adjustments based on AI models integrated from the server side.
 
-### `npm run eject`
+### Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Full leaderboard and social sharing functionalities**: Track player scores, display leaderboards, and enable social sharing to enhance user engagement.
+- **Advanced game modes and multiplayer capabilities**: Introduce various game modes and support for multiplayer gameplay to enrich the user experience.
+- **Comprehensive test coverage and CI/CD pipeline setup**: Ensure robust test coverage and establish a continuous integration and deployment pipeline for streamlined development and deployment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure you have the following installed:
 
-## Learn More
+- **Node.js** (version 14 or higher)
+- **npm** (Node Package Manager)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the repository**:
 
-### Code Splitting
+    ```bash
+    git clone https://github.com/CohenNaama/triviavsai-client.git
+    cd triviavsai-client
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies**:
 
-### Analyzing the Bundle Size
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Set up environment variables**:
 
-### Making a Progressive Web App
+    Create a `.env` file in the root directory and add the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```plaintext
+    REACT_APP_API_URL=http://127.0.0.1:5000
+    ```
 
-### Advanced Configuration
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To start the development server and begin developing the client-side application:
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# triviavsai-client
-Trivia VS AI client-side React app
->>>>>>> c8c5587a6e296137690b880c4ba2d5118dba2976
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
